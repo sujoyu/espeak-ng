@@ -554,6 +554,7 @@ const char *GetTranslatedPhonemeString(int phoneme_mode)
 	char phon_buf[30];
 	char phon_buf2[30];
 	PHONEME_LIST *plist;
+	PHONEME_LIST *prev_plist = NULL;
 
 	static const char *stress_chars = "==,,''";
 
@@ -580,8 +581,9 @@ const char *GetTranslatedPhonemeString(int phoneme_mode)
 		plist = &phoneme_list[ix];
 
 		WritePhMnemonic(phon_buf2, plist->ph, plist, use_ipa, &flags);
-		if (plist->newword & PHLIST_START_OF_WORD && !(plist->newword & (PHLIST_START_OF_SENTENCE | PHLIST_START_OF_CLAUSE)))
+		if (plist->ph->type != phVIRTUAL && (prev_plist != NULL && prev_plist->ph->type != phVIRTUAL) && plist->newword & PHLIST_START_OF_WORD && !(plist->newword & (PHLIST_START_OF_SENTENCE | PHLIST_START_OF_CLAUSE)))
 			*buf++ = ' ';
+		prev_plist = plist;
 
 		if ((!plist->newword) || (separate_phonemes == ' ')) {
 			if ((separate_phonemes != 0) && (ix > 1)) {

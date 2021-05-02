@@ -18,8 +18,21 @@
 // This is using the X-SAMPA transcriptions
 // (http://www.phon.ucl.ac.uk/home/sampa/x-sampa.htm).
 
+phoneme _b
+  virtual
+  ipa ↗
+  Tone(28, 7, envelope/p_fall, NULL)
+endphoneme
+
+phoneme _e
+  virtual
+  ipa ↘
+  Tone(109, 116, envelope/p_rise, NULL)
+endphoneme
+
 phoneme :
   virtual
+  ipa ː
   length 70
 endphoneme
 
