@@ -30,6 +30,12 @@ phoneme _e
   Tone(109, 116, envelope/p_rise, NULL)
 endphoneme
 
+phoneme %
+  virtual
+  ipa ʼ
+  Tone(109, 116, envelope/p_rise, NULL)
+endphoneme
+
 phoneme :
   virtual
   ipa ː

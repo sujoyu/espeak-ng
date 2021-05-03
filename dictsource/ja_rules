@@ -267,6 +267,7 @@
 	あ゙	va		// va (Katakana)
 	あ゙ぁ	va:		// vā (Katakana)
 	あ゙ー	va:		// vā (Katakana)
+	あ  (L20   a%
 
 .group い
 	い	i		// i
@@ -277,6 +278,7 @@
 	い゙ー	vi:		// vī (Katakana)
 	いぇ	je		// ye
 	いぇー	je:		// yē
+	い  (L20   i%
 
 .group う
 	う	u		// u
@@ -301,6 +303,7 @@
 	うぉー	wo:		// wō
 	ゔゅ	v_ju		// vyu
 	ゔゅー	v_ju:		// vyū
+	う  (L20  u%
 
 .group え
 	え	e		// e
@@ -309,6 +312,7 @@
 	え゙	ve		// ve (Katakana)
 	え゙ぇ	ve:		// vē (Katakana)
 	え゙ー	ve:		// vē (Katakana)
+	え (L20  e%
 
 .group お
 	お	o		// o
@@ -317,6 +321,7 @@
 	お゙	vo		// vo (Katakana)
 	お゙ぉ	vo:		// vō (Katakana)
 	お゙ー	vo:		// vō (Katakana)
+  お (L20 o%
 
 .group か
 	か	ka		// ka
